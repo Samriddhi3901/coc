@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9d342; /* Fallback color */
+    color: white;
+}
+
+/* Home Container */
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url('clash-of-clans-background.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;  /* Space from the top */
+}
+
+/* Hero Section */
+.hero-section h1 {
+    font-size: 3rem;
+    color: #1e1e1e;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-top: -50px; /* Move the "Welcome" text further up */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #1e1e1e;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Start Button */
+.intro-button a {
+    background-color: #0fcff1;
+    color: #1e1e1e;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Move the button further down */
+.intro-button {
+    margin-top: 60px;  /* Push the button down */
+}
+
+.intro-button a:hover {
+    background-color: #42b9f9; /* Lighter yellow on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-section {
+    animation: fadeIn 2s ease-out;
+}
+
+/* Game Sounds */
+.game-sounds {
+    display: none;
+}
